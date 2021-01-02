@@ -7,9 +7,10 @@ Self-hosted instance of [Mozilla Pontoon](https://github.com/mozilla/pontoon).
 Basically it is UI for collaborative translation implemented as Django application.
 
 Requirements:
-    * PostgreSQL 
-    * RabbitMQ
-    * Celery worker that runs asynchronous jobs
+
+* PostgreSQL 
+* RabbitMQ
+* Celery worker that runs asynchronous jobs
 
 ## Periodical jobs
 
