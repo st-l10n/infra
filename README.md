@@ -3,7 +3,7 @@
 Infrastructure description.
 
 Currently, everything is deployed via [Ansible playbook](https://github.com/st-l10n/pontoon-playbook)
-to Hetzner cloud on single CPX31 instance (4 vCPU, 8GB RAM).
+to Hetzner cloud on single CPX31 instance (4 vCPU, 8GB RAM) on Linux (Ubuntu).
 
 Most automation is done as bunch of bash-cripts (should be also in [playbook](https://github.com/st-l10n/pontoon-playbook)) and 
 [martian](https://github.com/st-l10n/martian), tool for localization in go.
@@ -93,6 +93,8 @@ Requirements:
 * Celery worker that runs asynchronous jobs
 
 ### Periodical jobs
+
+Most periodical jobs are handled by systemd timers.
 
 #### Pontoon sync
 
