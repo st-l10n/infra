@@ -1,5 +1,20 @@
 # infra
 
+Infrastructure description.
+
+Currently, everything is deployed via [Ansible playbook](https://github.com/st-l10n/pontoon-playbook)
+to Hetzner cloud on single CPX31 instance (4 vCPU, 8GB RAM).
+
+Most automation is done as bunch of bash-cripts (should be also in [playbook](https://github.com/st-l10n/pontoon-playbook)) and 
+[martian](https://github.com/st-l10n/martian), tool for localization in go.
+
+## Martian
+
+The [martian](https://github.com/st-l10n/martian) tool solves multiple problems:
+* Generating `.po` files from English `.xml` files for every language
+* Generating translated `.xml` files from `.po` files and English `.xml` files
+* Notifying about new asset version to discord channel
+
 ## Pontoon server
 
 Self-hosted instance of [Mozilla Pontoon](https://github.com/mozilla/pontoon).
